@@ -1,0 +1,185 @@
+/* Universal Property */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Property */
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 30%;
+}
+
+.logo img{
+    width: 60%;
+}
+
+.search{
+    width: 5%;
+}
+
+.col1{
+    width: 40%;
+    margin: 30px;
+}
+
+.col2{
+    width: 60%;
+}
+
+.col1 h1{
+    font-size: 500%;
+    width: 100%;
+}
+
+.col1 p{
+    width: 50%;
+}
+
+.col1 button{
+    padding-top: 20p;
+    margin-top: 20px;
+    border-radius: 24px;
+    padding: 10px 20px;
+    width: 35%;
+}
+
+.bg-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col2 img{
+    width: 100%;
+}
+
+.rectangle{
+    position: relative;
+}
+
+.rectangle img {
+    width: 100%;
+    position: absolute;
+    bottom: -49px;
+    z-index: -1;
+}
+
+
+@media screen and ( max-width: 550px){
+    .bg-content{
+        flex-direction: column;
+    }
+
+    .col1 button{
+        width: 40%;
+    }
+    
+    .col1{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav{
+    width: 80%;
+    }
+}
+
+@media screen and ( max-width: 800px){
+.col1 p{
+    width: 100%;
+}
+
+.menu{
+    width: 42%;
+}
+}
+
+/* main section */
+
+main{
+    margin-top: 80px;   
+}
+
+.main-head{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.main-col1{
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    width: 30%;
+}
+
+.main-col1 img{
+    height: 1px;
+}
+
+.main-images{
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 2rem;
+}
+
+.trailer button{
+    background-color: rgb(62, 60, 60);
+    color: white;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.TV-MA{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.image{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.trailer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+img.heart {
+    position: absolute;
+    top: 0.8rem;
+    right: 1.5rem;
+}
+
+@media screen and ( max-width: 600px){
+    .main-images{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
