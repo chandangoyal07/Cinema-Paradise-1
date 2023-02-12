@@ -181,5 +181,9 @@ img.heart {
     .main-images{
         grid-template-columns: repeat(2,1fr);
     }
+    
+    .logo img{
+        width:40%;
+    }
 
 }
